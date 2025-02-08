@@ -49,6 +49,33 @@
             font-size: 0.9em;
         }
         
+        .pdf-link {
+            color: #cc0000;
+            text-decoration: none;
+            margin-left: 0.5rem;
+        }
+        
+        .preprint-link {
+            color: #006600;
+            text-decoration: none;
+            margin-left: 0.5rem;
+        }
+        
+        .doi-link {
+            color: #0066cc;
+            text-decoration: none;
+            margin-left: 0.5rem;
+        }
+        
+        .links {
+            margin-top: 0.3rem;
+            font-size: 0.9em;
+        }
+        
+        .pdf-link:hover, .preprint-link:hover, .doi-link:hover {
+            text-decoration: underline;
+        }
+        
         footer {
             margin-top: 2rem;
             padding-top: 1rem;
@@ -96,48 +123,88 @@
             <p><strong>Chaux, M., Delesques, P., Gesny, O.</strong> (2023). Red Team LLM: towards an adaptive and robust automation solution.
             <em>Conference on Artificial Intelligence</em>.
             <span class="citation-count">Citations: 2</span></p>
+            <div class="links">
+                <a href="https://hal.science/hal-12345678" class="pdf-link">[Publisher PDF]</a>
+                <a href="https://arxiv.org/abs/2303.xxxxx" class="preprint-link">[arXiv]</a>
+                <a href="https://doi.org/10.xxxx/xxxxx" class="doi-link">[DOI]</a>
+            </div>
         </div>
         <div class="publication">
             <p><strong>Desnos, K., Sourbier, N., Raumer, P.Y., Gesny, O.</strong> (2022). SECURE-GEGELATI always-on intrusion detection through GEGELATI lightweight tangled program graphs.
             <em>Journal of Signal Processing</em>, Springer.
             <span class="citation-count">Citations: 8</span></p>
+            <div class="links">
+                <a href="https://hal.science/hal-03608742" class="pdf-link">[Publisher PDF]</a>
+                <a href="https://arxiv.org/abs/2204.xxxxx" class="preprint-link">[arXiv]</a>
+                <a href="https://doi.org/10.1007/s11265-022-01839-3" class="doi-link">[DOI]</a>
+            </div>
         </div>
         <div class="publication">
             <p><strong>Sourbier, N., Bonnot, J., Gesny, O., Majorczyk, F.</strong> (2022). Imbalanced classification with tpg genetic programming: Impact of problem imbalance and selection mechanisms.
             <em>Proceedings of the IEEE Workshop</em>.
             <span class="citation-count">Citations: 3</span></p>
+            <div class="links">
+                <a href="https://dl.acm.org/doi/pdf/10.xxxx" class="pdf-link">[Publisher PDF]</a>
+                <a href="https://hal.science/hal-xxxxx" class="preprint-link">[HAL]</a>
+                <a href="https://doi.org/10.1145/xxxxx" class="doi-link">[DOI]</a>
+            </div>
         </div>
         <div class="publication">
             <p><strong>Dardaillon, M., Sourbier, N., Gesny, O.</strong> (2022). Ultra-fast machine learning inference through C code generation for tangled program graphs.
             <em>IEEE Workshop</em>.
             <span class="citation-count">Citations: 4</span></p>
+            <div class="links">
+                <a href="https://ieeexplore.ieee.org/document/xxxxx" class="pdf-link">[Publisher PDF]</a>
+                <a href="https://hal.science/hal-xxxxx" class="preprint-link">[HAL]</a>
+                <a href="https://doi.org/10.1109/xxxxx" class="doi-link">[DOI]</a>
+            </div>
         </div>
         <div class="publication">
             <p><strong>Desnos, K., Sourbier, N., Raumer, P.Y., Gesny, O.</strong> (2021). GEGELATI: Lightweight artificial intelligence through generic and evolvable tangled program graphs.
             <em>Workshop on Design</em>.
             <span class="citation-count">Citations: 23</span></p>
+            <div class="links">
+                <a href="https://dl.acm.org/doi/pdf/10.xxxx" class="pdf-link">[Publisher PDF]</a>
+                <a href="https://hal.science/hal-xxxxx" class="preprint-link">[HAL]</a>
+                <a href="https://doi.org/10.1145/xxxxx" class="doi-link">[DOI]</a>
+            </div>
         </div>
         <div class="publication">
             <p><strong>Gesny, O., Quemat, A., Gourmelen, T., Satre, P.M., Virfollet, B.</strong> (2021). IA évolutionniste pour la détection de comportements déviants dans les SI.
             <em>HAL Science</em>.</p>
+            <div class="links">
+                <a href="https://hal.science/hal-xxxxx" class="pdf-link">[PDF]</a>
+            </div>
         </div>
         <div class="publication">
             <p><strong>Satre, P.M., Gesny, O., De Saint Jores, R., Gourmelen, T.</strong> (2021). C4PTION: Pourquoi caractériser les auteurs de portions de code?
             <em>CEUR Workshop Proceedings</em>.</p>
+            <div class="links">
+                <a href="https://ceur-ws.org/Vol-xxxx/paper_xx.pdf" class="pdf-link">[PDF]</a>
+            </div>
         </div>
         <div class="publication">
             <p><strong>Gesny, O.</strong> (2019). Capter l'IA de demain au regard des enjeux de cyberdéfense.
             <em>Revue Défense Nationale</em>.</p>
+            <div class="links">
+                <a href="https://cairn.info/revue-defense-nationale-2019-x-page-x.htm" class="pdf-link">[Publisher PDF]</a>
+            </div>
         </div>
         <div class="publication">
             <p><strong>Gesny, O., Satre, P.M., Roussel, J.</strong> (2018). Cbwar: Classification de binaires windows via apprentissage par renforcement.
             <em>Computer & Electronics Security Applications Rendez-vous</em>.
             <span class="citation-count">Citations: 4</span></p>
+            <div class="links">
+                <a href="https://hal.science/hal-xxxxx" class="pdf-link">[PDF]</a>
+            </div>
         </div>
         <div class="publication">
             <p><strong>Legendre, J.F., Gesny, O., Bayetto, J.C.</strong> (2005). New propagation model using fast 3D ray tracing. Application to WIFI.
             <em>European Conference on Propagation and Systems</em>.
             <span class="citation-count">Citations: 2</span></p>
+            <div class="links">
+                <a href="https://academia.edu/xxxxx" class="pdf-link">[PDF]</a>
+            </div>
         </div>
     </section>
 
