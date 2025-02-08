@@ -13,12 +13,16 @@
             max-width: 1000px;
             margin: 0 auto;
             color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
         
         header {
             text-align: center;
             padding: 2rem 0;
             border-bottom: 2px solid #eee;
+            animation: fadeIn 1s ease-in;
         }
         
         nav {
@@ -77,26 +81,74 @@
         }
         
         footer {
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid #eee;
+            background: linear-gradient(90deg, #0077b6, #00b4d8);
+            color: #fff;
             text-align: center;
+            padding: 20px 0;
+            margin-top: auto;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            position: relative;
+        }
+
+        footer p {
+            margin: 0;
             font-size: 0.9rem;
+        }
+
+        .social-links {
+            margin-top: 10px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            display: inline-block;
+            transition: transform 0.2s ease, filter 0.3s ease;
+        }
+
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+            filter: grayscale(1);
+        }
+
+        .social-links a:hover img {
+            transform: scale(1.2);
+            filter: grayscale(0);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Container principal */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex: 1;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Olivier Gesny</h1>
-        <p>Head of Innovation at NEVERHACK</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Olivier Gesny</h1>
+            <p>Head of Innovation at NEVERHACK</p>
+        </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
     <section id="about">
         <h2>About</h2>
@@ -210,8 +262,30 @@
         </p>
     </section>
 
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Professional contact via Research profiles or social networks below
+            </p>
+        </section>
+    </div>
+
     <footer>
-        <p>© 2025 Olivier Gesny. Last updated: February 2025</p>
+        <p>&copy; [2025] - [Gesny]</p>
+        <div class="social-links">
+            <a href="https://github.com/olivlogol" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="24">
+            </a>
+            <a href="https://scholar.google.com/citations?hl=fr&user=LKlu6jAAAAAJ" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" width="24">
+            </a>
+            <a href="https://www.linkedin.com/in/olivier-gesny-47a5281/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="24">
+            </a>
+            <a href="https://bsky.app/profile/olivlogol.bsky.social" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg" alt="Bluesky" width="24">
+            </a>
+        </div>
     </footer>
 </body>
 </html>
